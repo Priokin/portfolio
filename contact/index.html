@@ -1,24 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mengfei Zhao: Personal site and portfolio</title>
-    <link rel="stylesheet" href="style.css"> 
+    <title>Mengfei Zhao: Contact</title>
+    <link rel="stylesheet" href="../style.css">
 </head>
+
 <body>
-    <h1>Mengfei Zhao</h1>
+    <h1>Contact Me</h1>
 
     <nav>
-        <a href="./">Home</a>
-        <a href="./projects/">Projects</a>
-        <a href="./contact/">Contact</a>
+        <a href="../">Home</a>
+        <a href="../projects/">Projects</a>
+        <a href="./">Contact</a>
         <a href="https://github.com/priokin" target="_blank">GitHub</a>
     </nav>
 
-    <p>Hello! I'm Mengfei Zhao, a student passionate about programming, web development, and exploring new technologies. Welcome to my personal portfolio!</p>
+    <form action="mailto:zhaomengfei248@gmail.com" method="POST" enctype="text/plain">
+        <label for="email">Your Email:</label><br>
+        <input type="email" id="email" name="email" placeholder="your.email@example.com"><br><br>
 
-    <img src="images/IMG.jpg" alt="A photo of Mengfei Zhao smiling">
+        <label for="subject">Subject:</label><br>
+        <input type="text" id="subject" name="subject" placeholder="Subject"><br><br>
+
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="body" rows="10" placeholder="Your message here..."></textarea><br><br>
+
+        <button type="submit">Send</button>
+    </form>
+
+    <p>After clicking "Send", your email client will open automatically.</p>
 
 </body>
+
 </html>
