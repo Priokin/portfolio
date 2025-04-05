@@ -1,7 +1,7 @@
 body {
     font: 100%/1.5 system-ui;
     margin: 2rem auto;
-    max-width: 800px; /* resize related - 限制整体内容宽度，确保页面在不同屏幕尺寸下居中且不会过于宽 */
+    max-width: 800px; /* resize related  */
     padding: 1rem;
     background-color: #f8f9fa;
     color: #333;
@@ -49,7 +49,7 @@ ul {
 
 img {
     max-width: 100%; /* resize related - 图片最大宽度限制为100%，自动根据容器大小调整 */
-    height: auto; /* resize related - 高度自动调整，保持图片比例 */
+    height: auto; /* resize related*/
     border-radius: 8px;
 }
 
@@ -67,10 +67,10 @@ label {
 input[type="email"],
 input[type="text"],
 textarea {
-    width: 100%; /* resize related - 输入框宽度设置为100%，自动适配容器宽度变化 */
+    width: 100%; /* resize related */
     padding: 0.5rem;
     margin-top: 0.5rem;
-    box-sizing: border-box; /* resize related - 包含边框和内边距在元素宽高内 */
+    box-sizing: border-box; /* resize related  */
 }
 
 button {
