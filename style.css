@@ -175,26 +175,29 @@
   
  
   .projects {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(20em, 1fr));
-    gap: var(--gap-size);
-    align-items: start;
+    column-count: 2;
+    column-gap: 1.5rem;
     margin-bottom: 2rem;
   }
   
-
   .projects article {
-    display: grid;
-    grid-template-rows: subgrid; 
-    grid-row: span 3;        
-    margin: 0;                    
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 1.5rem;
     padding: 1rem;
     border-radius: 8px;
     background-color: var(--article-bg);
     color: var(--article-color);
   }
   
-
+  .projects article img,
+  .projects article video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 1rem;
+  }
+  
   .projects article img,
   .projects article video {
     max-width: 100%;
