@@ -173,7 +173,15 @@
     border-radius: 8px;
   }
   
+  .profile-pic {
+    float: left;          
+    margin-right: 1rem;   
+    margin-bottom: 1rem;  
+    width: 200px;        
+    height: auto;        
 
+  }
+  
   .projects article img,
   .projects article video {
     max-width: 100%;
