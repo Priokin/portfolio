@@ -243,8 +243,9 @@ nav a {
 }
 
 nav a:hover {
-  text-decoration: underline;
-}
+    background-color: #b399db; 
+    text-decoration: underline;
+  }
 
 /* Current page link */
 nav a.current {
