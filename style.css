@@ -1,5 +1,5 @@
 :root {
-    --main-bg-color: #1c1c1c;
+    --main-bg-color: #2e2b2b;
     --main-text-color: #f0f0f0;
     --content-width: 100ch;
   }
@@ -156,5 +156,41 @@
   
   button:hover {
       background-color: #005bb5;
+  }
+  
+
+  .projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
+    gap: 1.5rem; 
+    margin-bottom: 2rem;
+  }
+  
+
+  .projects article {
+    --main-bg-color: #2e2b2b;
+    padding: 1rem;
+    border-radius: 8px;
+  }
+  
+
+  .projects article img,
+  .projects article video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 1rem;
+  }
+
+  .projects article h2 {
+    margin: 0.5rem 0;
+    font-size: 1.3rem;
+  }
+  
+
+  .projects article hr {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 1rem 0;
   }
   
