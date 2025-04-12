@@ -1,40 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mengfei Zhao: Contact</title>
-    <link rel="stylesheet" href="../style.css">
-    <nav>
-        <a href="../">Home</a>
-        <a href="../projects/">Projects</a>
-        <a href="../resume/">Resume</a>
-        <a href="./">Contact</a>
-        <a href="https://github.com/priokin" target="_blank">GitHub</a>
-    </nav>
+  <meta charset="UTF-8">
+  <title>Contact - Mengfei Zhao</title>
+  <link rel="stylesheet" href="../style.css">
 </head>
-
 <body>
-    <h1>Contact Me</h1>
+  <h1>Contact Me</h1>
 
+  <nav>
+    <a href="../">Home</a>
+    <a href="../projects/">Projects</a>
+    <a href="./" class="current">Contact</a>
+    <a href="https://github.com/zhaomengfei04" target="_blank">GitHub</a>
+  </nav>
 
+  <form action="mailto:zhaomengfei248@gmail.com" method="POST" enctype="text/plain">
+    <label for="email">Your Email:</label>
+    <input type="email" id="email" name="email" placeholder="your.email@example.com">
 
-    <form action="mailto:zhaomengfei248@gmail.com" method="POST" enctype="text/plain">
-        <label for="email">Your Email:</label><br>
-        <input type="email" id="email" name="email" placeholder="your.email@example.com"><br><br>
+    <label for="subject">Subject:</label>
+    <input type="text" id="subject" name="subject" placeholder="Subject">
 
-        <label for="subject">Subject:</label><br>
-        <input type="text" id="subject" name="subject" placeholder="Subject"><br><br>
+    <label for="message">Message:</label>
+    <textarea id="message" name="body" rows="10" placeholder="Your message here..."></textarea>
 
-        <label for="message">Message:</label><br>
-        <textarea id="message" name="body" rows="10" placeholder="Your message here..."></textarea><br><br>
-
-        <button type="submit">Send</button>
-    </form>
-
-    <p>Glad to receive ur email.</p>
-
+    <button type="submit">Send</button>
+  </form>
 </body>
-
 </html>
