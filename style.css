@@ -174,12 +174,20 @@
   }
   
  
-  .projects article {
-
+  .projects {
     display: grid;
-    grid-template-rows: subgrid;
-    grid-row: span 3;
-    margin: 0;                   
+    grid-template-columns: repeat(auto-fill, minmax(20em, 1fr));
+    gap: var(--gap-size);
+    align-items: start;
+    margin-bottom: 2rem;
+  }
+  
+
+  .projects article {
+    display: grid;
+    grid-template-rows: subgrid; 
+    grid-row: span 3;        
+    margin: 0;                    
     padding: 1rem;
     border-radius: 8px;
     background-color: var(--article-bg);
@@ -203,11 +211,10 @@
     width: 100%;
   }
   
-
-  .projects article h2 {
-    margin: 0.5rem 0;
-    font-size: 1.3rem; 
-    line-height: 1.1; 
+  .projects article ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1rem;
   }
   
 
