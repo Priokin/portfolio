@@ -1,7 +1,7 @@
 :root {
     --main-bg-color: #ffffff;
     --main-text-color: hsl(0, 0%, 0%);
-    --content-width: 160ch;
+    --content-width: 120ch;
   }
   
   body {
@@ -160,9 +160,10 @@
   
   .projects {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(25em, 1fr)); 
+    grid-template-columns: repeat(auto-fill, minmax(20em, 1fr));
     gap: 1.5rem;
-    margin-bottom: 2rem;
+    grid-auto-flow: row;
+    align-items: start;
   }
   
 
@@ -172,7 +173,13 @@
   background-color: #fff;
   color: #333;
 }
-
+.projects article hr {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 1rem 0;
+    width: 100%; 
+  }
+  
 .projects article img,
 .projects article video {
   max-width: 100%;
