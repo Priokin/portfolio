@@ -2,6 +2,10 @@
     --main-bg-color: #ffffff;
     --main-text-color: hsl(0, 0%, 0%);
     --content-width: 120ch;
+
+    --gap-size: 1.5rem;
+    --article-bg: #fff;
+    --article-color: #333;
   }
   
   body {
@@ -160,40 +164,58 @@
   
   .projects {
     display: grid;
+  
     grid-template-columns: repeat(auto-fill, minmax(20em, 1fr));
-    gap: 1.5rem;
-    grid-auto-flow: row;
+    gap: var(--gap-size);
+
     align-items: start;
+    margin-bottom: 2rem;
+   
+  }
+  
+ 
+  .projects article {
+
+    display: grid;
+    grid-template-rows: subgrid;
+    grid-row: span 3;
+    margin: 0;                   
+    padding: 1rem;
+    border-radius: 8px;
+    background-color: var(--article-bg);
+    color: var(--article-color);
   }
   
 
-.projects article {
-  padding: 1rem;
-  border-radius: 8px;
-  background-color: #fff;
-  color: #333;
-}
-.projects article hr {
+  .projects article img,
+  .projects article video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 1rem;
+  }
+  
+
+  .projects article hr {
     border: none;
     border-top: 1px solid #ccc;
     margin: 1rem 0;
-    width: 100%; 
+    width: 100%;
   }
   
-.projects article img,
-.projects article video {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin-top: 1rem;
-}
 
-.projects article h2 {
-  margin: 0.5rem 0;
-  font-size: 1.3rem;
-}
+  .projects article h2 {
+    margin: 0.5rem 0;
+    font-size: 1.3rem; 
+    line-height: 1.1; 
+  }
+  
 
-
+  h1 {
+    font-size: 200%;  
+    line-height: 1.1;
+    margin-bottom: 1rem;
+  }
 
   .profile-pic {
     float: left;          
