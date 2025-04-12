@@ -1,7 +1,7 @@
 :root {
     --main-bg-color: #ffffff;
-    --main-text-color: #000000;
-    --content-width: 100ch;
+    --main-text-color: hsl(0, 0%, 0%);
+    --content-width: 160ch;
   }
   
   body {
