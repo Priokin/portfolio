@@ -158,14 +158,13 @@
       background-color: #005bb5;
   }
   
-.projects {
-  display: grid;
-  /* 将自动填充改为固定两列 */
-  grid-template-columns: repeat(2, 1fr);
-  /* 列与列之间的间距 */
-  gap: 1.5rem;
-  margin-bottom: 2rem;
-}
+  .projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(25em, 1fr)); 
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
 
 .projects article {
   padding: 1rem;
